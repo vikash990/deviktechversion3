@@ -131,7 +131,7 @@ class Footer extends React.Component{
                    <FollowText>Follow Us</FollowText>
                 <SocialLinkWrapper>
                    <AnchorWrapper href="https://www.facebook.com/Deviktech-101424994871042/" target="_blank"><img src={logof}/></AnchorWrapper>
-                    <AnchorWrapper href="https://twitter.com/VikashD39681388" target="_blank"><img src={logot}/></AnchorWrapper>
+                   
                    <AnchorWrapper href="https://www.linkedin.com/in/devik-tech-b956891a6" target="_blank"><img src={logol}/></AnchorWrapper>
                    <AnchorWrapper href="https://www.instagram.com/deviktech/" target="_blank"><img src={logoi}/></AnchorWrapper>
                    </SocialLinkWrapper>
