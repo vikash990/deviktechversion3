@@ -30,24 +30,35 @@ const CardWrapper = styled(Row)`
     justify-content: center;
 `;
 
+const CourseInfoWrapper=styled('div')`
+  
+background-color: rgba(80, 156, 255, 0.445);
+
+
+
+
+`;
+
 const Home = () => (
     <HomeWrapper>
         <ExploitPotential/>
         <Separator height={40}/>
-        <TitleWrapper>Our Courses</TitleWrapper>
-        <NewWrapper>
-            <CardWrapper>
-                {courseInfo.map(course => (
-                    <CourseCard
-                        name={course.name}
-                        description={course.description}
-                        lectures={course.lectures}
-                        fee={course.fee}
-                        image={course.image}
-                    />
-                ))}
-            </CardWrapper>
-        </NewWrapper>
+        <CourseInfoWrapper>
+            <TitleWrapper>Our Courses</TitleWrapper>
+            <NewWrapper>
+                <CardWrapper>
+                    {courseInfo.map(course => (
+                        <CourseCard
+                            name={course.name}
+                            description={course.description}
+                            lectures={course.lectures}
+                            fee={course.fee}
+                            image={course.image}
+                        />
+                    ))}
+                </CardWrapper>
+            </NewWrapper>
+        </CourseInfoWrapper>
         <Separator height={30}/>
         <WhatElse/>
         <Separator height={40}/>

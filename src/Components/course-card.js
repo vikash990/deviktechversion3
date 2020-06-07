@@ -13,9 +13,8 @@ const CardWrapper = styled(Card)`
     border: 5px;
     border-radius: 12px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-        border: 1px solid #969696;
-    border-left: 6px solid #17a2b8;
-    
+      
+    border: 2px solid rgba(0, 0, 0, 0.288);
     @media (max-width: 767px) {
         margin: 10px 0;
     }
@@ -24,6 +23,13 @@ const CardWrapper = styled(Card)`
 const ImageWrapper = styled('img')`
     margin: 30px 0;
     height: 150px;
+    width:200px;
+    padding: 10%;
+    background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
+    border-radius: 20px;'
+     
+    
+    
 `;
 const CourseName = styled('div')`
     font-size: 32px;
@@ -44,7 +50,23 @@ const Fee = styled('div')`
     font-weight: 300;
 `;
 const ButtonWrapper = styled(Button)`
-    margin: 15px 0;
+    font-size: large;
+    padding: 8px 18px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: white; 
+    color:#1d04fad8;
+    border: 2px solid #0084ff80;  
+    border-radius: 10px;
+    margin-top:40px;
+
+    &:hover{
+        background-image: linear-gradient(to right, rgba(29, 4, 250, 0.479), rgba(0, 162, 255, 0.849));
+        color: white;
+        box-shadow: 0px 1px 0px 0px rgba(8, 142, 252, 0.459);
+        border: 2px solid white; 
+    }
+
 `;
 
 const onRegisterClick = () => {
@@ -55,6 +77,7 @@ const onRegisterClick = () => {
 };
 
 const CourseCard = ({ name, description, lectures, image, fee }) => (
+    
     <CardWrapper>
         <ImageWrapper src={image}/>
         <CourseName>
@@ -72,6 +95,7 @@ const CourseCard = ({ name, description, lectures, image, fee }) => (
             Register Now
         </ButtonWrapper>
     </CardWrapper>
+
 );
 
 CourseCard.propTypes = {

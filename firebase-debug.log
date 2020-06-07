@@ -1,0 +1,50 @@
+[debug] [2020-06-04T05:46:37.862Z] ----------------------------------------------------------------------
+[debug] [2020-06-04T05:46:37.871Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abhishek Trigunait\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-06-04T05:46:37.873Z] CLI Version:   8.4.1
+[debug] [2020-06-04T05:46:37.874Z] Platform:      win32
+[debug] [2020-06-04T05:46:37.874Z] Node Version:  v11.13.0
+[debug] [2020-06-04T05:46:37.883Z] Time:          Thu Jun 04 2020 11:16:37 GMT+0530 (India Standard Time)
+[debug] [2020-06-04T05:46:37.883Z] ----------------------------------------------------------------------
+[debug] [2020-06-04T05:46:37.883Z] 
+[debug] [2020-06-04T05:46:37.922Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-04T05:46:37.925Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\DevikTechVerion\deviktechVersion3
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2020-06-04T05:47:15.980Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"newTech","name":"6666"}
+[debug] [2020-06-04T05:47:18.079Z] <<< HTTP RESPONSE 400 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Thu, 04 Jun 2020 05:47:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1408","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-04T05:47:18.079Z] <<< HTTP RESPONSE BODY {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2020-06-04T05:47:18.125Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at module.exports (C:\Users\Abhishek Trigunait\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Abhishek Trigunait\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Abhishek Trigunait\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:193:13)
+    at Request.EventEmitter.emit (domain.js:481:20)
+    at Request.<anonymous> (C:\Users\Abhishek Trigunait\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:193:13)
+    at Request.EventEmitter.emit (domain.js:481:20)
+    at IncomingMessage.<anonymous> (C:\Users\Abhishek Trigunait\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:281:20)
+    at IncomingMessage.emit (events.js:198:15)
+    at IncomingMessage.EventEmitter.emit (domain.js:481:20)
+    at endReadableNT (_stream_readable.js:1142:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:17)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
